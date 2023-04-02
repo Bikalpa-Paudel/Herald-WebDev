@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo classes</title>
+</head>
+<style>
+    h1{
+        background-color: #16ae58;
+        text-transform: uppercase;
+    }
+    .para{
+        background-color: #dfae28;
+        line-height: 50px;
+    }
+    .link{
+        background-color: #29424b;
+    }
+    h1:hover{
+        font-size: 50px;
+        color: aquamarine;
+    }
+    .link:visited{
+        color: red;
+    }
+    input:checked{
+        border: none;
+        outline: 2px solid red;
+    }
+    .title{
+        background-color: #dfae28;
+    }
+
+</style>
+<body>
+    <h1 class="header">pseudo classes</h1>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequatur aliquid quo pariatur nisi quae architecto tempore unde ipsum at? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione blanditiis sit rerum? Deserunt voluptate inventore amet nihil, mollitia laboriosam ratione, necessitatibus aperiam possimus voluptatum, quibusdam blanditiis? Aliquam sequi quos libero cum. Tempore rerum minus, reprehenderit repellat esse tenetur quod optio soluta similique impedit architecto eum dolor recusandae? Eius, at autem?</p>
+    <a href="index.html" class="link">visit index html</a>
+    <form>
+        <p class="title">Which programming do you like?</p>
+        <label><input name="choose" type="radio">Python</label><br>
+        <label><input name="choose" type="radio" checked>Cprogramming</label><br>
+        <label><input name="choose" type="radio">Java</label><br>
+        <button>Submit</button>
+    </form>
+</body>
+</html>
