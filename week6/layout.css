@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.float-img{
+    width:50%;
+    float: right;
+}
+.float-para{
+    width: 50%;
+    color: rgb(65, 166, 82);
+    float: left;
+    text-align: justify;
+}
+.main{
+    width: 100%;
+    padding: 2rem;
+}
+
+/* responsive design  */
+
+@media screen and (max-width:1024px){
+    .main{
+        background-color: bisque;
+    }
+    .float-img{
+        width:100%;
+        float: none;
+
+    }
+    .float-para{
+    width: 100%;
+    float: none;
+    margin-top: 1rem;
+}
+}
+@media screen and (max-width:500px){
+
+    .float-para{
+    color: rgb(22, 160, 49);
+    }
+    .main{
+        background-color: rgb(203, 255, 196);
+    }
+}

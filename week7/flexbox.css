@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.box{
+    height: 300px;
+    width: 300px;
+
+}
+.box1{   
+    background-color: black; 
+
+}
+.box2{    
+    background-color: green;
+}
+.box3{    
+    background-color: aqua;
+}
+.box4{    
+    background-color:gold;
+    
+}
+.box5{    
+    background-color:brown;
+    
+}
+.box6{    
+    background-color:blue;
+
+}
