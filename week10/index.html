@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body>
+        <input type="text">
+        <button>enter</button>
+        <div></div>
+    <script>
+        
+        let a = "bikalpa";
+        console.log(typeof(a));
+        
+        // user input
+        //user = prompt("Write something");
+        //console.log(user)
+
+        // var vs let
+        let c = "helllo"
+        {
+            c = "Hi"
+            console.log(c)
+        }
+        console.log(c)
+
+        // ctreating object
+
+        let person ={
+            name : "Bikalpa",
+            age: 18,
+            address : "Naxal",
+            work: function(){
+                return this.name
+            }
+        }
+        console.log(person.work())
+        let dictionaray = {
+            Hi : "type of greeting",
+            Laptop: "protable computer device",
+            Interest: "the feeling of wanting to know or learn about something or someone",
+            enthusiastic: "having or showing intense and eager enjoyment, interest, or approval.",
+            actor:"a person whose profession is acting on the stage, in films, or on television."       
+        }
+        console.log(typeof(dictionaray));
+        console.log(dictionaray.Laptop);
+
+        // condtional statement 
+        // let num = prompt("enter a number");
+        // if(num % 2 == 0){
+        //   alert("the number is even")
+        // }
+        // else{
+        //    alert("the number is odd")
+        //}
+        let age = prompt("enter your age");
+        if(age<12){
+            console.log('child')
+        }
+        else if(age >= 10 && age <=12 ){
+            console.log('infant')
+        }
+        else if(age > 12 && age <=18){
+            console.log('underage')
+        }
+        else if(age > 18 && age <= 40){
+            console.log('Adult')
+        }
+        else{
+            console.log('old')
+        }
+
+        // sum
+        let sum = 0;
+        for(let i=0; i<=10; i++){
+            sum += i
+        }
+        console.log(sum)
+
+
+        //function
+
+        function sumOfTwoNumber(num1,num2){
+            let sum =0;
+            sum = num1 + num2;
+            return sum;
+        }
+        console.log(sumOfTwoNumber(5,4))
+
+        function avg(){
+            num1 = parseInt(prompt('Enter first numner'));
+            num2 = parseInt(prompt('Enter second numner'));
+            num3 = parseInt(prompt('Enter third numner'));
+            avrg = (num1 + num2 + num3)/3;
+            return avrg;
+        }
+        console.log(avg())
+        let btn = document.querySelector('button');
+        btn.addEventListener('click',function(){
+            const age = document.querySelector('input').value;
+            const div = document.querySelector('div')
+            if(age<12){
+                div.innerText = "infant"
+            }
+            else if(age >= 12 && age <=18 ){
+                div.innerText = "under age"
+            }
+            else if(age > 18 && age <=40){
+                div.innerText = "Adult"
+            }
+            else{
+                div.innerText = "old"
+            }
+        })
+
+    </script>
+</body>
+</html>
